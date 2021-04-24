@@ -1,0 +1,35 @@
+POST http://localhost:5050/api/v1/auth/signup HTTP/1.1
+content-type: application/json
+
+{
+    "first_name":"ibrahim",
+        "last_name":"Mohammed",
+        "email":"test@yahoo.com",
+        "password":"Bangis11`"
+}
+###
+
+POST http://localhost:5050/api/v1/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+        "email":"test@yahoo.com",
+        "password":"Bangis11`"
+}
+
+###
+POST http://localhost:5050/api/v1/auth/forgotPassword HTTP/1.1
+content-type: application/json
+
+{
+        "email":"test@yahoo.com"
+}
+###
+GET  http://localhost:5050/api/v1/auth/resetpassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlicmFoaW0iLCJpYXQiOjE2MDk2ODUwNTksImV4cCI6MTYwOTc3MTQ1OX0.-pAZYDL-bZKnSWAGvIOy5P6nuNqs640CsAQ_56Nxjfo HTTP/1.1
+content-type: application/json
+
+{
+        "password":"Bangis12`"
+}
+###
+GET http://localhost:5050/api/v1/state HTTP/1.1
